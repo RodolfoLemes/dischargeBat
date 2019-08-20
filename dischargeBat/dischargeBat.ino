@@ -49,7 +49,7 @@ void measure (void) {
 
   Serial.print("\n");
 
-  /*
+  
   Serial.print("Tensao2= ");
   Serial.print(voltage2);
 
@@ -65,7 +65,6 @@ void measure (void) {
   Serial.print("s ");
 
   Serial.print("\n");
-*/
 }
 
 boolean x = false;
@@ -100,30 +99,25 @@ void setup() {
 void loop () {
 
   digitalWrite(LED, x);
+
   delay(2000);
   if(voltage < 2.7){
     digitalWrite(rele, HIGH);
-    if(voltage == 0){
-       return;
-    }
-    digitalWrite(buzzer, HIGH);
-    delay(1000);
-    digitalWrite(buzzer, LOW);
   }else{
     digitalWrite(rele, LOW);
   }
 
-  /*if(voltage2 < 2.7){
-    digitalWrite(rele2, HIGH);
+  if(voltage2 < 2.7){
+    //digitalWrite(rele2, HIGH);
     if(voltage2 == 0){
        return;
     }
     digitalWrite(buzzer, HIGH);
     delay(1000);
     digitalWrite(buzzer, LOW);
-  }else{
-    digitalWrite(rele2, LOW);
-  }*/
+  }//else{
+    //digitalWrite(rele2, LOW);
+  //}
 
  
 

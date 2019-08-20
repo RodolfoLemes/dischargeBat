@@ -1,0 +1,12 @@
+{
+  "name": "dischargeBat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RodolfoLemes/dischargeBat.git",
+  "author": "Rodolfo <rodolfo_fero@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "serialport": "^7.1.5"
+  }
+}
